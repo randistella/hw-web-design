@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+.bullet_term {
+    color: #333333;
+    font-weight: bold;
+    font-size: large;
+}
+
+h1 {
+    font-size: large;
+    font-family: cursive, "Arial", sans-serif;
+}
