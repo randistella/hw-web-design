@@ -27,6 +27,17 @@ img, object, embed, video {
 	http://goldengridsystem.com/
 */
 
+body {
+    background-image: url(assets/lady_in_red.jpg);
+    background-repeat: repeat-x;
+    
+}
+.img_float, img_float_right {
+    float: none;
+    border: solid thin #333333;
+    margin: 10px
+}
+
 .fluid {
 	clear: both;
 	margin-left: 0;
@@ -129,6 +140,14 @@ h1 {
 /* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
 
 @media only screen and (min-width: 481px) {
+
+.img_float {
+    float: left;
+    }
+
+.img_float_right {
+    float: right;
+    }
 
 .gridContainer {
 	width: 90.675%;
