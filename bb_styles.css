@@ -15,7 +15,7 @@ img, object, embed, video {
 /*
 	Dreamweaver Fluid Grid Properties
 	----------------------------------
-	dw-num-cols-mobile:		4;
+	dw-num-cols-mobile:	X	4;
 	dw-num-cols-tablet:		8;
 	dw-num-cols-desktop:	12;
 	dw-gutter-percentage:	25;
@@ -26,7 +26,31 @@ img, object, embed, video {
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
+ul li a:hover {
+	color: #311432;
+	background-color: #DCABF7;
+	
+}
 
+ul li {
+	width: 100%; 
+	text-decoration: none;
+	display: inline;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.menu_bar.fluid {
+	text-align: center;
+	background-color: #F5DE79;
+}
+
+h2 {
+    color: #003300;
+    font-family: "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
 body {
     background-image: url(assets/lady_in_red.jpg);
     background-repeat: repeat-x;
@@ -63,12 +87,17 @@ body {
 	padding-right: 2.275%;
 	clear: none;
 	float: none;
+	border-width: thin;
+	border-style: solid;
+	border-color: #272525;
+	background-color: #FFFFFF
 }
 .header_div {
 	background-image: url(assets/blooms_logo.jpg);
 	background-repeat: no-repeat;
 	height: 110px;
 	margin-top: 10px;
+	height: 110px;
 }
 .nav_div {
 	width: 30%;
@@ -94,12 +123,12 @@ body {
 .nav_ul_li {
 }
 .intro_paragraph {
-	width: 97%;
+	width: 100%;
 	float:none; 
-	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
 	clear: none;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 .paragraph_text {
 	width: 50%;
@@ -141,6 +170,14 @@ h1 {
 
 @media only screen and (min-width: 481px) {
 
+ul li a {
+	width: 100%; 
+	text-decoration: none;
+	display: inline;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+	
 .img_float {
     float: left;
     }
@@ -160,7 +197,7 @@ h1 {
 .header_div {
 	margin-top: 10px;
 	background-image: url(assets/blooms_banner_tablet.jpg);
-	height: 150px;
+	height: 110px;
 }
 .nav_div {
 width: 30%;
@@ -191,6 +228,14 @@ display: none;
 
 @media only screen and (min-width: 769px) {
 
+ul li a {
+	width: 100%; 
+	text-decoration: none;
+	display: inline;
+	padding-left: 4%;
+	padding-right: 4%;
+}
+	
 .gridContainer {
 	width: 88.5%;
 	max-width: 975px;
@@ -203,6 +248,7 @@ display: none;
 }
 .header_div {
 	background-image: url(assets/blooms_banner.jpg);
+	background-repeat: repeat-x;
 }
 .nav_div {
 width: 30%;
