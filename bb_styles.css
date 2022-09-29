@@ -26,6 +26,35 @@ img, object, embed, video {
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
+
+.top_row {
+    font-weight: 800;
+    align-content: center;
+    text-align: center;
+}
+
+.workshop_date {
+    width: 50%;
+}
+.feature_flower {
+    width: 25%;
+}
+
+tr td img {
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
+    font-size: small;
+}
 ul li a:hover {
 	color: #311432;
 	background-color: #DCABF7;
@@ -170,6 +199,15 @@ h1 {
 
 @media only screen and (min-width: 481px) {
 
+table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
+    font-size: small;
+}
+    
 ul li a {
 	width: 100%; 
 	text-decoration: none;
@@ -228,6 +266,15 @@ display: none;
 
 @media only screen and (min-width: 769px) {
 
+table {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
+    font-size: medium;
+}
+    
 ul li a {
 	width: 100%; 
 	text-decoration: none;
