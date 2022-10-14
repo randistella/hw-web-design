@@ -26,6 +26,10 @@ img, object, embed, video {
 	and Golden Grid System by Joni Korpi
 	http://goldengridsystem.com/
 */
+.contact_info {
+    font-style: italic;
+    font-size: medium;
+}
 
 .top_row {
     font-weight: 800;
