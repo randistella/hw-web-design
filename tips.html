@@ -50,13 +50,74 @@ Do the following if you're using your customized build of modernizr (http://www.
             <span class="bullet_term">Summer</span> – The time to supplement rainfall so that plants get one inch of water per week. Plant your vegetable garden and enjoy bountiful harvests until late fall.
 			
             <h1>Basic Gardening Tips </h1>
-			<ol>
+			<blockquote>
 			<li>Select plants according to your climate.</li>
             <li>In planning your garden, consider the composition, texture, structure, depth, and drainage of your soil.</li>
 			<li>Use compost to improve the structure of your soil.</li>
 			<li>Choose plant foods based on your garden objectives.</li>
 			<li>Generally, plants should receive one inch of water per week.</li>
-			<li>Use mulch to conserve moisture, keep plants cool, and cut down on weeding.</li></ol>
+			<li>Use mulch to conserve moisture, keep plants cool, and cut down on weeding.</li>
+            </blockquote>
+			<br>
+			<form target="_self" id="submit_tips">
+			  <table width="200" border="0">
+  <tbody>
+    <tr>
+      <th scope="col" colspan="2">Submit Your Favorite Gadening Tip</th>
+    </tr>
+    <tr>
+      <td>Email*</td>
+      <td><input type="text" maxlength="30"></td>
+    </tr>
+    <tr>
+      <td>Category</td>
+      <td><select name="category" class="menu_text">
+		  	<option value="None">Select from list:</option>
+  			<option value="weeds">Weed control</option>
+  			<option value="growth">General growth</option>
+  			<option value="Pests">Pest control</option>
+	</select></td>
+    </tr>
+    <tr>
+      <td>Subject</td>
+      <td><input type="text" maxlength="50"></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><textarea id="description" rows="5"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2">How long have you been gardening? 
+        <p>
+          <label>
+            <input type="radio" name="years_gardening" value="1+" id="years_gardening_0">
+            1 to 5 years</label>
+          <br>
+          <label>
+            <input type="radio" name="years_gardening" value="5+" id="years_gardening_1">
+            5 to 10 years</label>
+          <br>
+          <label>
+            <input type="radio" name="years_gardening" value="10+" id="years_gardening_2">
+            Over 10 years</label>
+          <br>
+        </p></td>
+    </tr>
+    <tr>
+      <td colspan="2">Receive notifications when new tips are submitted? <input type="checkbox" label="yes" id="notification" value="yes">
+        &nbsp;Yes</td>
+    </tr>
+    <tr>
+      <td><input type="hidden" value="email" name="required"></td>
+      <td><input type="submit" class="button_face">
+        &nbsp;<input type="reset" class="button_face"></td>
+    </tr>
+    <tr>
+      <td colspan="2">Required*</td>
+    </tr>
+  </tbody>
+</table>
+			</form>
 			<p class="body_text">
 			<em>Blooms &amp; Bulbs<br>
 			Highway 43<br>
