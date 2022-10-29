@@ -27,15 +27,32 @@ Do the following if you're using your customized build of modernizr (http://www.
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 <script src="respond.min.js"></script>
-    <style>
+<script src="Scripts/swfobject_modified.js"></script>
+<style>
     hr {
         border-width: thin;
         border-style: solid;
         border-color: #3D6437;
     
     </style>
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	canvas = document.getElementById("canvas");
+	exportRoot = new lib.quote_html5();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+	
 </head>
-<body>
+<body onload="init()">
 	<div class="gridContainer clearfix">
 <div id="content" class="fluid">
   <header class="fluid header_div"></header>
@@ -50,14 +67,45 @@ Do the following if you're using your customized build of modernizr (http://www.
               <div class="fluid intro_paragraph">
                   <h2>New Composting Workshop!</h2>
 
-                    <p>Our next workshop is entitled “Everything You Need to Know About Composting.” This informative workshop will be great for any gardener, whether you plan to invest in a commercial compost bin or simply start a compost pile in a corner of your garden. You will be amazed at how quickly you can produce rich, nutrient-filled compost with only a little effort. Use this black gold to amend your soil naturally, to encourage the growth of healthy plants. Not only will you create rich soil and save water—you will also reduce trash at the landfill by recycling your kitchen scraps and garden materials.<br><br>
-
-                    We offer this free workshop on a first-come, first-served basis. All workshop participants will receive a packet of bacteria to kick-start their composting process. Our speaker will be Ann Porter from the County Extension Office. Ann recently completed her Master Composter Certification and is eager to share her knowledge. She is an engaging speaker you will be sure to enjoy. Call 555-248-0806 today to reserve your spot!
-                  </p>
+                <p>Our next workshop is entitled “Everything You Need to Know About Composting.” This informative workshop will be great for any gardener, whether you plan to invest in a commercial compost bin or simply start a compost pile in a corner of your garden. You will be amazed at how quickly you can produce rich, nutrient-filled compost with only a little effort. Use this black gold to amend your soil naturally, to encourage the growth of healthy plants. Not only will you create rich soil and save water—you will also reduce trash at the landfill by recycling your kitchen scraps and garden materials.<br>
+                      <br>
+                      We offer this free workshop on a first-come, first-served basis. All workshop participants will receive a packet of bacteria to kick-start their composting process. Our speaker will be Ann Porter from the County Extension Office. Ann recently completed her Master Composter Certification and is eager to share her knowledge. She is an engaging speaker you will be sure to enjoy. Call 555-248-0806 today to reserve your spot!
+                      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="220" height="65" class="quote" id="FlashID" title="quote">
+                        <param name="movie" value="assets/garden_quote.swf">
+                        <param name="quality" value="high">
+                        <param name="wmode" value="opaque">
+                        <param name="swfversion" value="8.0.35.0">
+                        <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                        <param name="expressinstall" value="Scripts/expressInstall.swf">
+                        <param name="LOOP" value="false">
+                        <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                        <!--[if !IE]>-->
+                        <object type="application/x-shockwave-flash" data="assets/garden_quote.swf" width="220" height="65">
+                          <!--<![endif]-->
+                          <param name="quality" value="high">
+                          <param name="wmode" value="opaque">
+                          <param name="swfversion" value="8.0.35.0">
+                          <param name="expressinstall" value="Scripts/expressInstall.swf">
+                          <param name="LOOP" value="false">
+                          <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                          <div>
+                            <h4>Content on this page requires a newer version of Adobe Flash Player</h4>
+                            <p><a href="http://www.adobe.com/go/getflashplayer"></a></p>
+                          </div>
+                          <!--[if !IE]>-->
+                        </object>
+                        <!--<![endif]-->
+                      </object>
+					<br><br>
+					
+					<canvas></canvas>
+                </p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
               </div>
                 <div class="table_div">
-<table>
-     <caption>
+                  <table>
+                    <caption>
     Blooms &amp; Bulbs Spring Workshops
   </caption>
   <tbody>
@@ -100,5 +148,8 @@ Do the following if you're using your customized build of modernizr (http://www.
 <div class="fluid footer_div"><span class="small_text">Copyright 2002 - 2016<br>
 Last updated on June 1, 2016</span></div>
 </div>
+<script type="text/javascript">
+swfobject.registerObject("FlashID");
+    </script>
 </body>
 </html>

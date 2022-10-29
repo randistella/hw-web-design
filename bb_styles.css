@@ -27,6 +27,15 @@ img, object, embed, video {
 	http://goldengridsystem.com/
 */
 
+#canvas {
+	display:inline;
+	margins:5px;
+	float:right;
+}
+.quote {
+	float: right;
+}
+
 .button_face {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", sans-serif;
 }
